@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import View from './components/View.vue';
+import MyPokemon from './components/my-pokemon.vue';
 </script>
 
 <template>
   <h2>Hello World</h2>
   <View element="div">Hello From View</View>
+  <br>
+  <MyPokemon></MyPokemon>
 </template>
 
 <style scoped>
