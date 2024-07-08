@@ -8,7 +8,11 @@ export default defineConfig( {
   plugins: [ vue() ],
   test: {
     globals: true,
-    setupFiles: './src/components/__tests__/setupTests.ts'
+    setupFiles: './src/components/__tests__/setupTests.ts',
+    includeSource: [ "src/**/*.{js,ts,vue}" ],
+  },
+  define: {
+    "import.meta.vitest": "undefined"
   },
   resolve: {
     alias: {
